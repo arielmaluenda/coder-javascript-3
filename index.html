@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,300&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Amadrina</title>
+</head>
+<body>
+  <div class="container">
+    <div class="row my-4 text-center">
+      <h2> 💖 ¡Amadrina a un animal rescatado!</h2>
+      <hr>
+    </div>
+
+    <!-- PASO 1 -->
+    <div id="paso1">
+      <div class="row mt-5 mb-4 text-center">
+        <div class="h4">¿Nos visitas desde <span id="pais"></span>?</div>
+        <div class="d-flex flex-row justify-content-center">
+          <button type="button" class="btn btn-outline-success mx-2" id="visitaDesdeSi">Sí</button>
+          <button type="button" class="btn btn-outline-danger mx-2" id="visitaDesdeNo">No</button>
+        </div>
+      </div>
+    </div>
+    <div id="paso1b" class="hidden">
+      <div class="row text-center mt-5 mb-2"> 
+          <div class="h5">Escoge tu país: </div>
+      </div>
+      <div class="row">
+        <div class="col col-md-4 offset-md-4">           
+          <select class="form-select form-select-md mb-3" name="paisManual">
+            <option value="CL">🇨🇱 Chile</option>
+            <option value="ARG">🇦🇷 Argentina</option>
+            <option value="MX">🇲🇽 México</option>
+            <option value="PE">🇵🇪 Perú</option>
+            <option value="USA">🇺🇸 Estados unidos</option>
+            <option value="UK">🇬🇧 Reino Unido</option>
+            <option value="EUR">🇪🇺 Unión Europa</option>
+            <option value="OTRO">🌎 Otro</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- PASO 2 -->
+    <div class="row mt-5 mb-4 text-center">
+      <div class="h4">¿A qué tipo de animal te gustaría ayudar?</div>
+      <div id="escogeEspecie" class="d-flex flex-row justify-content-center fs-4">
+        <button type="button" class="btn btn-outline-primary btn-lg fs-1 mx-2" id="eligeVaca">🐮</button>
+        <button type="button" class="btn btn-outline-primary btn-lg fs-1 mx-2" id="eligeCerdo">🐷</button>
+        <button type="button" class="btn btn-outline-primary btn-lg fs-1 mx-2" id="eligeGallina">🐔</button>
+        <button type="button" class="btn btn-outline-primary btn-lg fs-1 mx-2" id="eligeCabra">🐐</button>
+        <button type="button" class="btn btn-outline-primary btn-lg fs-1 mx-2" id="eligeOveja">🐑</button>
+        <button type="button" class="btn btn-outline-primary btn-lg fs-1 mx-2" id="eligeBurro">🐴</button>
+      </div>
+    </div>
+  
+    <!-- PASO 3 -->
+    <div class="row mt-5 mb-4 text-center">
+
+
+
+    </div>
+  </div>
+  
+  
+
+  
+  
+
+  
+
+  <button id="boton" style="width:100px; height: 30px">ClickMe</button>
+
+
+ 
+  <script>
+    let boton = document.getElementById("boton");
+    const respuesta = (x) => {
+      console.log("gila" + x )
+    }
+    boton.addEventListener("click", () => respuesta(" walo"))
+    boton.onclick = () => respuesta("walo")
+  </script>
+
+  <script src="./main.js"></script>
+
+  <!-- 
+    TERCERA ENTREGA
+    Agregar uso storage, eventos, json
+
+  - Implementacion uso JSON y storage
+  - Modificacion del DOM  y detección de eventos de usuario
+  
+   * ya no usamos alert y prompt
+   
+   Objetivos generales
+   > Codificar funciones de procesos esenciales y notificación por html
+   añadiendo interacción al simuldor
+   > Ampliar y refinar el flujo de trabajo del script en términos de captura
+   de eventos, procesamiento del simulador y notificación de resultados
+   de forma de salidas por HTML, modificando el DOM
+
+   Objetivos específicos
+   > Definit eventos a manejar y su función de respuesta
+
+  > Modificar el DOM, ya sea para definiir elementos a cargar la página
+  o para realizar salidas de un procesamiento
+
+  >Almacenar datos clave valor en el Storage y recuperarlos
+
+
+
+  
+
+
+    -Estructura HTML del proyecto
+    -Variables de JS necesarias
+    -Funciones esenciales del proceso a simular
+    -Objetos de JS
+    -Arrays (find, filter.. o some, map, reduce)
+    -Método de búsqueda y filtrado sobre el array
+    -alert prompt
+    opcional:
+    -math
+    -date
+
+    Const productos = [
+    a,
+    b,
+    c
+    ]
+
+    Productos.forEach(producto) => {
+      let div = document.createElement("div");
+      div.innterHTML = `
+      <div class="verde">
+        <h2> id: ${producto.id}</h2>
+        <p>Nombre: ${producto.nombre}</p>
+        <b>Precio: ${producto.precio}</b>
+      </div>
+      `;
+      contenedor.append(div)  
+    });
+
+
+    -No tiene DOM
+    -No tiene evento
+    -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
+

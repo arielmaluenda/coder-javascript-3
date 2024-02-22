@@ -1,0 +1,19 @@
+body {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  color: #464343;
+}
+h1{
+  font-weight: 700;
+}
+.hidden {
+  display:none;
+}
+.show {
+  display:block;
+}
+.w-200{
+  width: 200px;
+}
